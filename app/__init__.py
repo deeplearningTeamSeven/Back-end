@@ -15,6 +15,7 @@ from app.utils.custom_exception import *
 
 app=Flask(__name__)
 api=Api(app)
+
 api.add_namespace(User_api,'/users')
 api.add_namespace(Login_api,'/login')
 api.add_namespace(Diet_api,'/diets')
